@@ -6,9 +6,9 @@
 #     Let’s say User selected a range, i.e., from A to B, where A and B belong to Integer.
 #     Some random integer will be selected by the system and the user has to guess that integer in the minimum number of guesses
 
-from guessClass import guessClass
+from guessClass import GuessClass
 
-partida = guessClass(5, 50)
+partida = GuessClass(5, 50)
 print("Minimo ", partida.getMinimo())
 print("Maximo ", partida.getMaximo())
 print("debe de adivinarse el ", partida.getAleatorio())

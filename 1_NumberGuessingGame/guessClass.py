@@ -1,7 +1,7 @@
 from random import randrange
 
 
-class guessClass:
+class GuessClass:
     def __init__(self, minimo, maximo):
         if (minimo < maximo):
             self.__minimo = minimo

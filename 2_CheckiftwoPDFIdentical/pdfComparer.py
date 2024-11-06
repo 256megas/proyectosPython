@@ -2,7 +2,7 @@ import hashlib
 from difflib import SequenceMatcher
 
 
-class pdfComparer:
+class PdfComparer:
     def __init__(self, file1, file2):
         self.__file1 = file1
         print("Archivo1: ", self.__file1)

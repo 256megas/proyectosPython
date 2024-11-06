@@ -1,5 +1,5 @@
-from pdfComparer import pdfComparer
+from pdfComparer import PdfComparer
 
-compare = pdfComparer("./2_CheckiftwoPDFIdentical/dummy.pdf",
+compare = PdfComparer("./2_CheckiftwoPDFIdentical/dummy.pdf",
                       "./2_CheckiftwoPDFIdentical/dummy2.pdf")
 print(compare.comparer())
