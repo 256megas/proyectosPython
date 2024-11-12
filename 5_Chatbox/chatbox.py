@@ -9,6 +9,10 @@ API_KEY = ''
 # Configure the API
 ai.configure(api_key=API_KEY)
 
+# Create a new model
+model = ai.GenerativeModel("gemini-pro")
+# chat = model.start_chat()
+
 # Create a new modelcomo
 chat = model.start_chat()
 
