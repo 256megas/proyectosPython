@@ -32,3 +32,16 @@ class mySQLCon:
                     print(err.msg)
             else:
                 print("OK")
+
+    def createUser(self, nombre, apellido):
+        __createUser = "INSERT INTO usuarios (nombre, apellido) VALUES ('" + \
+            nombre+"','" + apellido+"');"
+        try:
+            print(f"CREANDO USUARIO {nombre}")
+            self.__cur.execute(__createUser)
+            self.__conector.commit()
+        except mysql.connector.Error as err:
+            if err.errno == errorcode.ER_TABLE_EXISTS_ERROR:
+                print("YA EXISTE.")
+            else:
+                print(err.msg)

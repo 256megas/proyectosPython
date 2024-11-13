@@ -6,3 +6,4 @@ from connect import mySQLCon
 cone = mySQLCon()
 print(cone)
 cone.createTables()
+cone.createUser("Patata", "Asada")
