@@ -46,7 +46,7 @@ async def parametros(name: str):
     return {"Message": "Saludos " + name}
 
 # Habría que hacer un Endpoint para cada parte del CRUD
-# fastapi run ./7_API/api.py
+# fastapi run ./7_API_CORS/api.py
 
 # JUGAMOS UN POCO
 
